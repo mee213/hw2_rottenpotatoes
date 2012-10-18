@@ -20,3 +20,30 @@ Migrating to CreateMovies (20111119180638)
   [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 18 Oct 2012 02:43:40 UTC +00:00], ["description", nil], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Thu, 18 Oct 2012 02:43:40 UTC +00:00]]
   [1m[35mSQL (1.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 18 Oct 2012 02:43:40 UTC +00:00], ["description", nil], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Thu, 18 Oct 2012 02:43:40 UTC +00:00]]
   [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 18 Oct 2012 02:43:40 UTC +00:00], ["description", nil], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Thu, 18 Oct 2012 02:43:40 UTC +00:00]]
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-10-17 19:44:50 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (45.9ms)
+Compiled application.css  (0ms)  (pid 5355)
+Compiled application.js  (34ms)  (pid 5355)
+Compiled jquery.js  (34ms)  (pid 5355)
+Compiled jquery_ujs.js  (14ms)  (pid 5355)
+Completed 200 OK in 489ms (Views: 486.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-17 19:44:57 -0700
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-17 19:44:57 -0700
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-17 19:44:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-17 19:44:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
