@@ -47,3 +47,44 @@ Served asset /jquery_ujs.js - 304 Not Modified (18ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-17 19:44:57 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-04 08:51:43 -0700
+Served asset /rails.png - 200 OK (90ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-04 08:51:55 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (94.4ms)
+Completed 200 OK in 547ms (Views: 543.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-04 08:51:57 -0700
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 08:51:57 -0700
+Served asset /jquery.js - 200 OK (136ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 08:51:57 -0700
+Served asset /jquery_ujs.js - 200 OK (65ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-04 08:51:57 -0700
+Served asset /application.js - 200 OK (58ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-04-04 08:52:07 -0700
+  Processing by MoviesController#new as HTML
+Rendered movies/new.html.haml within layouts/application (40.7ms)
+Completed 200 OK in 123ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-04-04 08:52:14 -0700
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered movies/show.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 75ms (Views: 54.3ms | ActiveRecord: 7.9ms)
