@@ -15,12 +15,10 @@ class MoviesController < ApplicationController
       end
     end
 
-    if params[:cssid]
-      if params[:order] == "title"
-        @title_id = params[:cssid]
-      elsif params[:order] == "release_date"
-        @date_id = params[:cssid]
-      end
+    if params[:order] == "title"
+      @title_id = params[:cssid]
+    elsif params[:order] == "release_date"
+      @date_id = params[:cssid]
     end
 
     order = params[:order]
