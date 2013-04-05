@@ -7,16 +7,28 @@ class MoviesController < ApplicationController
   end
 
   def index
-    if params[:cssclass]
-      if params[:order] == "title"
-        @title_class = params[:cssclass]
-      elsif params[:order] == "release_date"
-        @date_class = params[:cssclass]
-      end
+    @all_ratings = Movie.all_ratings
+
+    @order = params[:order]
+
+    if @order == "title"
+        @title_class = "hilite"
+    elsif @order == "release_date"
+        @date_class = "hilite"
     end
 
-    order = params[:order]
-    @movies = Movie.find(:all, :order => order)
+    if params[:ratings]
+      ratings = params[:ratings]
+      if ratings.kind_of?(Array)
+        @ratings = ratings
+      else
+        @ratings = ratings.keys
+      end
+    else
+      @ratings = @all_ratings
+    end
+
+    @movies = Movie.find(:all, :conditions => ['rating IN (?)', @ratings], :order => @order)
   end
 
   def new
