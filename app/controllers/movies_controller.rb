@@ -17,7 +17,9 @@ class MoviesController < ApplicationController
       session[:order] = params[:order]
     end
 
-    if params[:ratings]
+    if params[:ratings] == []
+      session[:ratings] = session[:ratings]
+    elsif params[:ratings]
       session[:ratings] = params[:ratings]
     end
 
