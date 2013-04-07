@@ -9,10 +9,8 @@ class MoviesController < ApplicationController
   def index
     @all_ratings = Movie.all_ratings
 
-    needs_redirect = true
-
-    if params[:order] != session[:order] && params[:ratings] != session[:order]
-      needs_redirect = false
+    if session[:ratings] || session[:order]
+      needs_redirect = true
     end
 
     if params[:order]
@@ -29,21 +27,27 @@ class MoviesController < ApplicationController
         @date_class = "hilite"
     end
 
+    if session[:order]
+      @order = session[:order]
+    end
+
     if session[:ratings]
-      if session[:ratings].kind_of?(Array)
-        session[:ratings] = session[:ratings]
+      temp_ratings = session[:ratings]
+      if temp_ratings.kind_of?(Array)
+        @ratings = temp_ratings
       else
-        session[:ratings] = session[:ratings].keys
+        @ratings = temp_ratings.keys
       end
     else
-      session[:ratings] = @all_ratings
+      @ratings = @all_ratings
     end
 
     @movies = Movie.find(:all, :conditions => ['rating IN (?)', session[:ratings]], :order => session[:order])
 
     if needs_redirect
       flash.keep
-      redirect_to movies_path(:ratings => session[:ratings], :order => session[:order])
+      session.clear
+      redirect_to movies_path(:ratings => @ratings, :order => @order)
     end
   end
 

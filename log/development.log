@@ -5112,3 +5112,508 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 14:58:28 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:09:07 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY release_date[0m
+Rendered movies/index.html.haml within layouts/application (55.6ms)
+Completed 200 OK in 118ms (Views: 92.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:09:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:09:07 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:09:07 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:09:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:09:12 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (148.2ms)
+Completed 200 OK in 207ms (Views: 193.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:09:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:09:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:09:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:09:12 -0700
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/movies?order=title" for 127.0.0.1 at 2013-04-07 15:11:10 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title"}
+  [1m[36mMovie Load (0.9ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:11:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:10 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/movies?order=release_date" for 127.0.0.1 at 2013-04-07 15:11:16 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:11:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.0.0.1 at 2013-04-07 15:11:19 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R')) ORDER BY release_date[0m
+Rendered movies/index.html.haml within layouts/application (39.5ms)
+Completed 200 OK in 80ms (Views: 63.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:11:19 -0700
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:19 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.0.0.1 at 2013-04-07 15:11:28 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.9ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG-13','R')) ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (58.4ms)
+Completed 200 OK in 84ms (Views: 78.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:11:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:28 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?order=title" for 127.0.0.1 at 2013-04-07 15:11:32 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG-13','R')) ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (149.1ms)
+Completed 200 OK in 178ms (Views: 173.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:11:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:11:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:18:03 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.7ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG-13','R')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG-13&ratings%5B%5D=R
+Completed 302 Found in 26ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG-13&ratings%5B%5D=R" for 127.0.0.1 at 2013-04-07 15:18:04 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG-13", "R"]}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG-13','R')) ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (undefined method `include?' for :ratings:Symbol):
+    5:   Include: 
+    6:   - @all_ratings.each do |rating|
+    7:     = rating
+    8:     = check_box_tag "ratings[#{rating}]", 1, (checked = true if :ratings.include?(rating)), :id => "ratings_#{rating}"
+    9:   = submit_tag 'Refresh', :id => "ratings_submit"
+    10: 
+    11: %table#movies
+  app/views/movies/index.html.haml:8:in `block (2 levels) in _app_views_movies_index_html_haml___336134904__643251928'
+  app/views/movies/index.html.haml:6:in `each'
+  app/views/movies/index.html.haml:6:in `block in _app_views_movies_index_html_haml___336134904__643251928'
+  app/views/movies/index.html.haml:4:in `_app_views_movies_index_html_haml___336134904__643251928'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:18:40 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R'))
+Rendered movies/index.html.haml within layouts/application (23.3ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    5:   Include: 
+    6:   - @all_ratings.each do |rating|
+    7:     = rating
+    8:     = check_box_tag "ratings[#{rating}]", 1, (checked = true if :ratings[].include?(rating)), :id => "ratings_#{rating}"
+    9:   = submit_tag 'Refresh', :id => "ratings_submit"
+    10: 
+    11: %table#movies
+  app/views/movies/index.html.haml:8:in `[]'
+  app/views/movies/index.html.haml:8:in `block (2 levels) in _app_views_movies_index_html_haml___336134904_87450870'
+  app/views/movies/index.html.haml:6:in `each'
+  app/views/movies/index.html.haml:6:in `block in _app_views_movies_index_html_haml___336134904_87450870'
+  app/views/movies/index.html.haml:4:in `_app_views_movies_index_html_haml___336134904_87450870'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:20:12 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R'))[0m
+Rendered movies/index.html.haml within layouts/application (33.3ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?):
+    5:   Include: 
+    6:   - @all_ratings.each do |rating|
+    7:     = rating
+    8:     = check_box_tag "ratings[#{rating}]", 1, (checked = true if params[:ratings].include?(rating)), :id => "ratings_#{rating}"
+    9:   = submit_tag 'Refresh', :id => "ratings_submit"
+    10: 
+    11: %table#movies
+  app/views/movies/index.html.haml:8:in `block (2 levels) in _app_views_movies_index_html_haml___336134904__636398928'
+  app/views/movies/index.html.haml:6:in `each'
+  app/views/movies/index.html.haml:6:in `block in _app_views_movies_index_html_haml___336134904__636398928'
+  app/views/movies/index.html.haml:4:in `_app_views_movies_index_html_haml___336134904__636398928'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:22:59 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R'))
+Rendered movies/index.html.haml within layouts/application (39.7ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?):
+    5:   Include: 
+    6:   - @all_ratings.each do |rating|
+    7:     = rating
+    8:     = check_box_tag "ratings[#{rating}]", 1, (checked = true if @ratings.include?(rating)), :id => "ratings_#{rating}"
+    9:   = submit_tag 'Refresh', :id => "ratings_submit"
+    10: 
+    11: %table#movies
+  app/views/movies/index.html.haml:8:in `block (2 levels) in _app_views_movies_index_html_haml___336134904__644634878'
+  app/views/movies/index.html.haml:6:in `each'
+  app/views/movies/index.html.haml:6:in `block in _app_views_movies_index_html_haml___336134904__644634878'
+  app/views/movies/index.html.haml:4:in `_app_views_movies_index_html_haml___336134904__644634878'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:25:18 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN (NULL))[0m
+Rendered movies/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:25:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:25:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:25:19 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:25:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.0.0.1 at 2013-04-07 15:25:25 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('--- 
+- G
+- "1"
+','--- 
+- PG
+- "1"
+','--- 
+- PG-13
+- "1"
+','--- 
+- R
+- "1"
+'))
+Rendered movies/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 51ms (Views: 40.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:25:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:25:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:25:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:25:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:28:03 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('--- 
+- G
+- "1"
+','--- 
+- PG
+- "1"
+','--- 
+- PG-13
+- "1"
+','--- 
+- R
+- "1"
+'))[0m
+Redirected to http://localhost:3000/movies?ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R
+Completed 302 Found in 11ms
+
+
+Started GET "/movies?ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R" for 127.0.0.1 at 2013-04-07 15:28:04 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>["G", "PG", "PG-13", "R"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R'))
+Rendered movies/index.html.haml within layouts/application (47.2ms)
+Completed 200 OK in 102ms (Views: 91.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:28:04 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:04 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?order=release_date" for 127.0.0.1 at 2013-04-07 15:28:12 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R')) ORDER BY release_date[0m
+Redirected to http://localhost:3000/movies?order=release_date&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R
+Completed 302 Found in 5ms
+
+
+Started GET "/movies?order=release_date&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R" for 127.0.0.1 at 2013-04-07 15:28:12 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date", "ratings"=>["G", "PG", "PG-13", "R"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R')) ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (78.3ms)
+Completed 200 OK in 103ms (Views: 98.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:28:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:13 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:13 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for 127.0.0.1 at 2013-04-07 15:28:17 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('--- 
+- G
+- "1"
+','--- 
+- PG
+- "1"
+','--- 
+- PG-13
+- "1"
+')) ORDER BY release_date[0m
+Redirected to http://localhost:3000/movies?order=release_date&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13
+Completed 302 Found in 5ms
+
+
+Started GET "/movies?order=release_date&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13" for 127.0.0.1 at 2013-04-07 15:28:17 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date", "ratings"=>["G", "PG", "PG-13"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (196.0ms)
+Completed 200 OK in 224ms (Views: 220.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:28:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:18 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/7" for 127.0.0.1 at 2013-04-07 15:28:22 -0700
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+Rendered movies/show.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 37ms (Views: 26.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:28:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 15:28:25 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY release_date
+Redirected to http://localhost:3000/movies?order=release_date&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13
+Completed 302 Found in 4ms
+
+
+Started GET "/movies?order=release_date&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13" for 127.0.0.1 at 2013-04-07 15:28:25 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date", "ratings"=>["G", "PG", "PG-13"]}
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY release_date[0m
+Rendered movies/index.html.haml within layouts/application (289.3ms)
+Completed 200 OK in 346ms (Views: 336.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 15:28:25 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 15:28:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
