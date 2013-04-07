@@ -34,15 +34,17 @@ class MoviesController < ApplicationController
     end
 
     if session[:ratings]
-      temp_ratings = session[:ratings]
-      if temp_ratings.kind_of?(Array)
-        @ratings = temp_ratings
+      ratings = session[:ratings]
+      if ratings.kind_of?(Array)
+        @ratings = ratings
       else
-        @ratings = temp_ratings.keys
+        @ratings = ratings.keys
       end
     else
       @ratings = @all_ratings
     end
+
+    session[:ratings] = @ratings
 
     @movies = Movie.find(:all, :conditions => ['rating IN (?)', session[:ratings]], :order => session[:order])
 
