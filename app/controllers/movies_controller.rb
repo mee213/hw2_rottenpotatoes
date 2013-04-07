@@ -48,6 +48,7 @@ class MoviesController < ApplicationController
     if needs_redirect
       flash.keep
       redirect_to movies_path(:order => @order, :ratings => @ratings)
+      session.clear
     end
   end
 
