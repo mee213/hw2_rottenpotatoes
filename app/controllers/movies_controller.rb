@@ -9,8 +9,12 @@ class MoviesController < ApplicationController
   def index
     @all_ratings = Movie.all_ratings
 
-    @order = params[:order]
-
+    if params[:order]
+      session[:order] = params[:order]
+    end
+  
+    @order = session[:order]
+    
     if @order == "title"
         @title_class = "hilite"
     elsif @order == "release_date"
@@ -18,7 +22,11 @@ class MoviesController < ApplicationController
     end
 
     if params[:ratings]
-      ratings = params[:ratings]
+      session[:ratings] = params[:ratings]
+    end
+
+    if session[:ratings]
+      ratings = session[:ratings]
       if ratings.kind_of?(Array)
         @ratings = ratings
       else
