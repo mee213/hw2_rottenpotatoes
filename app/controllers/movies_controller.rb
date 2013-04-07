@@ -7,6 +7,13 @@ class MoviesController < ApplicationController
   end
 
   def index
+
+    needs_redirect = true
+
+    if params[:order] && params[:ratings]
+      needs_redirect = false
+    end
+
     @all_ratings = Movie.all_ratings
 
     if params[:order]
@@ -37,6 +44,11 @@ class MoviesController < ApplicationController
     end
 
     @movies = Movie.find(:all, :conditions => ['rating IN (?)', @ratings], :order => @order)
+
+    if needs_redirect
+      flash.keep
+      redirect_to movies_path(:order => @order, :ratings => @ratings)
+    end
   end
 
   def new

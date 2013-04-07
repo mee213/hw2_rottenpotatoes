@@ -4290,3 +4290,415 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:23:51 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 13:39:59 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 5ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 10ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 12ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 13ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 14ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 13ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 18ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 17ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 14ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 14ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 19ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 14ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:02 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (7.9ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 21ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:02 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 15ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:02 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 26ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:02 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 12ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:02 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 19ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:02 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 13ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:03 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 14ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:03 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 7ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:40:03 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 8ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 13:41:25 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Completed 500 Internal Server Error in 4ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/movies_controller.rb:41:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 13:43:09 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/movies_controller.rb:41:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 13:43:12 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/movies_controller.rb:41:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.9ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 13:52:55 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG
+Completed 302 Found in 5ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG" for 127.0.0.1 at 2013-04-07 13:52:55 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG"]}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG')) ORDER BY title
+Rendered movies/index.html.haml within layouts/application (179.3ms)
+Completed 200 OK in 206ms (Views: 196.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 13:52:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 13:52:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 13:52:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:52:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for 127.0.0.1 at 2013-04-07 13:53:06 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13
+Completed 302 Found in 14ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13" for 127.0.0.1 at 2013-04-07 13:53:06 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG", "PG-13"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13')) ORDER BY title
+Rendered movies/index.html.haml within layouts/application (36.9ms)
+Completed 200 OK in 84ms (Views: 77.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 13:53:06 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.0.0.1 at 2013-04-07 13:53:09 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R')) ORDER BY title[0m
+Redirected to http://localhost:3000/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R
+Completed 302 Found in 8ms
+
+
+Started GET "/movies?order=title&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R" for 127.0.0.1 at 2013-04-07 13:53:09 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"title", "ratings"=>["G", "PG", "PG-13", "R"]}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R')) ORDER BY title
+Rendered movies/index.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 65ms (Views: 55.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 13:53:10 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?order=release_date&ratings%5B%5D=G&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R" for 127.0.0.1 at 2013-04-07 13:53:13 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date", "ratings"=>["G", "PG", "PG-13", "R"]}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('G','PG','PG-13','R')) ORDER BY release_date[0m
+Rendered movies/index.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 40ms (Views: 34.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 13:53:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.0.0.1 at 2013-04-07 13:53:18 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('PG','PG-13','R')) ORDER BY release_date
+Redirected to http://localhost:3000/movies?order=release_date&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R
+Completed 302 Found in 5ms
+
+
+Started GET "/movies?order=release_date&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R" for 127.0.0.1 at 2013-04-07 13:53:18 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date", "ratings"=>["PG", "PG-13", "R"]}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('PG','PG-13','R')) ORDER BY release_date[0m
+Rendered movies/index.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 71ms (Views: 54.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 13:53:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:19 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2013-04-07 13:53:27 -0700
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered movies/show.html.haml within layouts/application (17.7ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 13:53:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-04-07 13:53:30 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (rating IN ('PG','PG-13','R')) ORDER BY release_date[0m
+Redirected to http://localhost:3000/movies?order=release_date&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R
+Completed 302 Found in 15ms
+
+
+Started GET "/movies?order=release_date&ratings%5B%5D=PG&ratings%5B%5D=PG-13&ratings%5B%5D=R" for 127.0.0.1 at 2013-04-07 13:53:30 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"order"=>"release_date", "ratings"=>["PG", "PG-13", "R"]}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (rating IN ('PG','PG-13','R')) ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (57.9ms)
+Completed 200 OK in 79ms (Views: 71.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-07 13:53:31 -0700
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:31 -0700
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-07 13:53:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
